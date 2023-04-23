@@ -301,11 +301,59 @@ nav {
 }
 
 .links-container {
-  height: 0;
   overflow: hidden;
   transition: var(--transition);
 }
 
-.show-container {
-  height: 10rem;
+.social-icons {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+
+  .links-container {
+    height: auto !important; /* if the links are hidden in the small screen, show them when it goes to big screen. The important flag gives priority over the in-line styling*/
+  }
+
+  .links a {
+    padding: 0;
+  }
+
+  .links {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .links a:hover {
+    background: transparent;
+    padding: 0;
+  }
+
+  .social-icons a {
+    color: var(--primary-500);
+    transition: var(--transition);
+  }
+
+  .social-icons a {
+    color: var(--primary-300);
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 0.5rem;
+  }
 }
