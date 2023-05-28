@@ -12,16 +12,11 @@ export const useFetchTasks = () => {
 
 export const useCreateTask = () => {
   const queryClient = useQueryClient();
-  const { mutate: createTask, isLoading: createTaskLoading } = useMutation({
-    mutationFn: (taskTitle) => customFetch.post("/", { title: taskTitle }),
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["tasks"] });
-      toast.success("task added");
-    },
-    onError: (error) => {
-      toast.error(error.response.data.msg);
-    },
+  const result = useMutation({
+    mutationFn: () => customFetch.post("/", { title: "some title" }),
   });
+  console.log(result);
+
   return { createTask, createTaskLoading };
 };
 
