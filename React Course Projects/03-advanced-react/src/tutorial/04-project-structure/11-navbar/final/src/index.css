@@ -14,18 +14,37 @@ html {
 
 :root {
   /* colors */
-  --background-light: #f0ece3;
-  --background-medium: #dfd3c3;
-  --background-dark: #c7b198;
-  --text-color: #596e79;
+  --primary-100: #c5e5fc;
+  --primary-200: #a5d5f8;
+  --primary-300: #8bcbf9;
+  --primary-400: #6ebef7;
+  --primary-500: #49a6e9;
+  --primary-600: #2d87c8;
+  --primary-700: #1a6aa2;
+  --primary-800: #104e7a;
+  --primary-900: #063251;
 
-  /* colors */
-  --extra-big-text: 43rem;
-  --big-text: 3rem;
-  --medium-text: 1.5rem;
+  /* grey */
+  --grey-50: #f8fafc;
+  --grey-100: #f1f5f9;
+  --grey-200: #e2e8f0;
+  --grey-300: #cbd5e1;
+  --grey-400: #94a3b8;
+  --grey-500: #64748b;
+  --grey-600: #475569;
+  --grey-700: #334155;
+  --grey-800: #1e293b;
+  --grey-900: #0f172a;
+  /* rest of the colors */
+  --black: #222;
+  --white: #fff;
+  --red-light: #f8d7da;
+  --red-dark: #842029;
+  --green-light: #d1e7dd;
+  --green-dark: #0f5132;
+
   --small-text: 0.875rem;
   --extra-small-text: 0.7em;
-
   /* rest of the vars */
   --backgroundColor: var(--grey-50);
   --textColor: var(--grey-900);
@@ -47,8 +66,8 @@ html {
 
 body {
   background: var(--backgroundColor);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
   line-height: 1;
   color: var(--textColor);
@@ -238,10 +257,6 @@ ul {
 nav {
   background: var(--white);
   box-shadow: var(--shadow-1);
-}
-
-.nav-center {
-  width: 100%;
 }
 
 .nav-header {

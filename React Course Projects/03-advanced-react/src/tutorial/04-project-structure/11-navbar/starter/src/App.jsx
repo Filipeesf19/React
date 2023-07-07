@@ -1,11 +1,10 @@
-import { BrowserRouter } from "react-router-dom";
 import Navbar from "./Navbar";
 
 const App = () => {
   return (
-    <main>
+    <h2>
       <Navbar />
-    </main>
+    </h2>
   );
 };
 export default App;
